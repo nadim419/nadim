@@ -1,0 +1,7 @@
+echo "# nadim" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nadim419/nadim.git
+git push -u origin main
