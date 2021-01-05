@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#ffff;	
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#ff3333;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
+}
+ 
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#fff;
+	font-size: 23px;
+	
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:#292929;
+	font-family:Poppins;
+}
+.toggle{
+	display: none;
+}
+.active a,
+.menu li a:hover{
+	background-color:#292929;
+	color:#FFF!important;
+	font-weight: bold;
+	transition: all ease 0.4s;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+footer{
+padding:5px;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+background: #1a1a1a;
+color:black;
+font-family: Arial;
+letter-spacing: 1px;
+}
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 2-7 */
+  transform: scale(1.2);
+
+
+</style>
+</head>
+<body link="white" alink="white" vlink="white">
+<h3 align="center">
+<section id="main">
+	<nav>
+	<a href="home.html" class="logo"><img src="image/logo.png"></a>
+	<div class="toggle"></div>
+	<ul class="menu">
+	<li><a href="home.html" >Home</a></li>
+<div class="dropdown">
+                 <li class="active"><a href="casio.html">brands</a></li>
+                 <i class="fa fa-caret-down"></i>
+                 </button>
+                <div class="dropdown-content">
+                <a href="casio.html">Casio</a>
+                <a href="swatch.html">Swatch</a>
+                <a href="tag.html">Tag Heuer</a>
+                <a href="apple.html">Apple</a>
+                <a href="haylou.html">Haylou</a>
+                <a href="oris.html">Oris</a>
+    </div> 
+</div>  
+                   <div class="dropdown">
+                 <li><a href="men.html">watches</a></li>
+                 <i class="fa fa-caret-down"></i>
+                 </button>
+                <div class="dropdown-content">
+                <a href="men.html">men</a>
+                <a href="women.html">women</a>
+    </div>
+  </div>
+
+
+                 <li><a href="about.html">about</a></li>
+                 <li><a href="contact.html">contact</a></li>		
+				 <li><a href="index.html">logout</a></li>
+	</ul>
+	</nav>
+</section>
+
+<br><br><br><br><br><br><br><br>
+
+<link href="contact-form.css" rel="stylesheet">
+
+<div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+        <div class="fcf-credit" id="fcf-credit">
+        Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+        </div>
+<br>
+
+<footer>
+<font color="white">
+
+<a href="contact.html">Contact us</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.html">About Us</a>
+<br>
+  <a href="https://www.facebook.com/naddy.shushi" target="_blank"><img src="image/fb.png" border="0" height="100" width="100"  class="zoom" abbr title="facebook" ></a>
+  <a href="https://www.instagram.com/direct/inbox/" target="_blank"><img src="image/ig.png" border="0" height="100" width="100"  class="zoom" abbr title="instagram" ></a>
+<br>
+This website are designed for IMD311 Group Assigment
+<br>
+All Right Reserved By Time Expert
+</font>
+</footer>
+
+
+</body>
+</html>
